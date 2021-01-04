@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" charset="utf-8">
+
+
+<html lang="ja">
+<head>
+    <title>本要約まとめサイト</title>
+    <script type="text/javascript">
+<!--
+// 設定開始
+// （フレームの場合は、表示先のフレーム名を設定してください）
+// （top を指定すると、フレームの分割を廃止して画面全体で表示します）
+// （blank を指定すると、新規ウィンドウで表示します）
+
+var target = "blank";
+
+// 設定終了
+
+
+function jump(){
+
+	var url = document.form1.select.options[document.form1.select.selectedIndex].value;
+
+	if(url != "" ){
+
+		if(target == 'top'){
+
+			top.location.href = url;
+
+		}
+		else if(target == 'blank'){
+
+			window.open(url, 'window_name');
+
+		}
+		else if(target != ""){
+
+			eval('parent.' + target + '.location.href = url');
+
+		}
+		else{
+
+			location.href = url;
+
+		}
+
+	}
+
+}
+
+// -->
+</script>
+</head>
+    
+<body>
+<header>
+<div class="header-list">
+    <a href="home.html">home</a>
+</div>
+<div class="title">
+    <h1>本要約まとめサイト</h1>
+    <p>サイト説明</p>
+</div>
+</header>
+
+<main>
+<div class="contents">
+    <div class="wrapper">
+        <div class="inner">
+            <form action="#" name="form1">
+                <select name="select" onChange="jump()">
+                    <option value="">要約者から探す</option>
+                    <option value="saratame.html">サラタメ</option>
+                    <option value="../../html_tag/index.html">本要約チャンネル</option>
+                    <option value="../../stylesheet/index.html">サムの本解説ch</option>
+                    <option value="../../javascript/index.html">JavaScript</option>
+                    <option value="../../color/index.html">カラーチャート</option>
+                </select>
+            </form>
+        </div>
+        <div class="inner">
+            
+        </div>
+    </div>
+</div>
+<div class="me">
+    <div class="me-name">
+        <h1>サイト立ち上げ人</h1>
+        <img src="https://lh3.googleusercontent.com/pw/ACtC-3dBBrpKnR9dM95FDOs98RIdT6Xz5dpeZIudDl6NLab8pJua874Ga3K87WwB8fo5Z4JIMdyitR4l0w8v8JpwB0tH5q4Nb7POdT66masyer4kdM08chWYDHBWnQY4VB53VIbmP14SgRSYguFGdxK_pvJAtIjCHfd0XS11pwj5X6VJJr-mo044JL2DecFs6dLNFG9K9hbrbNrYXQ0mOmq90Jc5NWbzJrXY5CibFylPL5zM4Ii7DO2dtpEGEYIE_BD9vShP5E-0d7xYaU5HuI_Z_3hEZyHg242GWbCfGR71IMsAfP50knP6WilHbnE9_Bu_jttfC0gjRSW6-tOXKZ97U7ZLWHpH0NYme6VWxjVPO9uOXyTpDw0t9HEYLiGFOONwdUpzpmQtLs1KEJpOV9ipkNRl6ekVe7PHFVWd2x2y7rKjiTLu2zh59Q-Wuf7RAczlXv-d8SyaewKmSREEXxVvlbcgr7Pz398pGmx0m4fEaYGhOd-FAHO33cmiwmurp8FWkiGkgzvSaggv9gUw90d-C36SVFBiQKd8VkekC2M8Z9y5TJLkobvrIOgk96fPMs5o-tiroGmsHOyRuxYu3hf2kXYk5bH_JGcWZNee71AxF6-jSpN7eoAt3nr49MLSqYOjTLd0N1_EiRYmRDoFH_gZuWgjKcElvlQtgedEwzW6PId5mxLDClHcrK88SnXvMuUxQvjntZaCBIH41eZClk04=w319-h213-no?authuser=0" style="weight: 250px; height: 250px; border-width: thin; border-color: red; border-style: solid; border-radius: 70px;">
+        <p>上川　晴河(26)</p>
+    </div>
+    <div class="me-thought">
+        <h1>このサイトを立ち上げた目的・想い</h1>
+        <p>;;;</p>
+    </div>
+</div>
+</main>
+
+<footer>
+    
+</footer>
+
+</body>
+
+</html>
