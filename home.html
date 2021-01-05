@@ -6,11 +6,7 @@
 <head>
     <title>本要約まとめサイト</title>
     <script type="text/javascript">
-<!--
-// 設定開始
-// （フレームの場合は、表示先のフレーム名を設定してください）
-// （top を指定すると、フレームの分割を廃止して画面全体で表示します）
-// （blank を指定すると、新規ウィンドウで表示します）
+
 
 var target = "blank";
 
@@ -20,6 +16,37 @@ var target = "blank";
 function jump(){
 
 	var url = document.form1.select.options[document.form1.select.selectedIndex].value;
+
+	if(url != "" ){
+
+		if(target == 'top'){
+
+			top.location.href = url;
+
+		}
+		else if(target == 'blank'){
+
+			window.open(url, 'window_name');
+
+		}
+		else if(target != ""){
+
+			eval('parent.' + target + '.location.href = url');
+
+		}
+		else{
+
+			location.href = url;
+
+		}
+
+	}
+
+}
+
+function jump(){
+
+	var url = document.form2.select.options[document.form2.select.selectedIndex].value;
 
 	if(url != "" ){
 
@@ -66,20 +93,31 @@ function jump(){
 <main>
 <div class="contents">
     <div class="wrapper">
-        <div class="inner">
+        <div class="inner-left">
+            <p>要約者から探す</p>
             <form action="#" name="form1">
                 <select name="select" onChange="jump()">
-                    <option value="">要約者から探す</option>
-                    <option value="saratame.html">サラタメ</option>
+                    <option value="">選択してください</option>
+                    <option value="saratame.html">サラタメさん</option>
+                    <option value="../../html_tag/index.html">本要約チャンネル</option>
+                    <option value="../../stylesheet/index.html">サムの本解説ch</option>
+                    <option value="../../javascript/index.html">学識サロン</option>
+                    <option value="../../color/index.html">カラーチャート</option>
+                </select>
+            </form>
+        </div>
+        <div class="inner-right">
+            <p>本から探す</p>
+            <form action="#" name="form2">
+                <select name="select" onChange="jump()">
+                    <option value="">選択してください</option>
+                    <option value="memo_book_index.html">メモの魔力</option>
                     <option value="../../html_tag/index.html">本要約チャンネル</option>
                     <option value="../../stylesheet/index.html">サムの本解説ch</option>
                     <option value="../../javascript/index.html">JavaScript</option>
                     <option value="../../color/index.html">カラーチャート</option>
                 </select>
             </form>
-        </div>
-        <div class="inner">
-            
         </div>
     </div>
 </div>
