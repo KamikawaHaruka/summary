@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <meta http-equiv="content-type" charset="utf-8">
-
+<link rel="stylesheet" href="css/home.css" type="text/css" />
+<link rel="stylesheet" href="css/header.css" type="text/css" />
+<link rel="stylesheet" href="css/background.css" type="text/css" />
 
 <html lang="ja">
 <head>
@@ -86,7 +88,10 @@ function jump(){
 </div>
 <div class="title">
     <h1>本要約まとめサイト</h1>
-    <p>サイト説明</p>
+    <p>このサイトでは本の要約をYouTubeに投稿しているYouTuberをまとめているサイトになります</p>
+    <p>全てのYouTuber、また本をまとめきれている訳ではありませんが、</p>
+    <p>できる限りたくさんのYouTuber、作品をまとめられればと思っています</p>
+    <p>是非ご活用いただければと思います</p>
 </div>
 </header>
 
@@ -98,11 +103,8 @@ function jump(){
             <form action="#" name="form1">
                 <select name="select" onChange="jump()">
                     <option value="">選択してください</option>
-                    <option value="saratame.html">サラタメさん</option>
-                    <option value="../../html_tag/index.html">本要約チャンネル</option>
-                    <option value="../../stylesheet/index.html">サムの本解説ch</option>
+                    <option value="summarizer/saratame.html">サラタメさん</option>
                     <option value="../../javascript/index.html">学識サロン</option>
-                    <option value="../../color/index.html">カラーチャート</option>
                 </select>
             </form>
         </div>
@@ -111,25 +113,21 @@ function jump(){
             <form action="#" name="form2">
                 <select name="select" onChange="jump()">
                     <option value="">選択してください</option>
-                    <option value="memo_book_index.html">メモの魔力</option>
-                    <option value="../../html_tag/index.html">本要約チャンネル</option>
-                    <option value="../../stylesheet/index.html">サムの本解説ch</option>
-                    <option value="../../javascript/index.html">JavaScript</option>
-                    <option value="../../color/index.html">カラーチャート</option>
+                    <option value="book/memo_book_index.html">メモの魔力</option>
                 </select>
             </form>
         </div>
     </div>
-</div>
-<div class="me">
-    <div class="me-name">
-        <h1>サイト立ち上げ人</h1>
-        <img src="https://lh3.googleusercontent.com/pw/ACtC-3dBBrpKnR9dM95FDOs98RIdT6Xz5dpeZIudDl6NLab8pJua874Ga3K87WwB8fo5Z4JIMdyitR4l0w8v8JpwB0tH5q4Nb7POdT66masyer4kdM08chWYDHBWnQY4VB53VIbmP14SgRSYguFGdxK_pvJAtIjCHfd0XS11pwj5X6VJJr-mo044JL2DecFs6dLNFG9K9hbrbNrYXQ0mOmq90Jc5NWbzJrXY5CibFylPL5zM4Ii7DO2dtpEGEYIE_BD9vShP5E-0d7xYaU5HuI_Z_3hEZyHg242GWbCfGR71IMsAfP50knP6WilHbnE9_Bu_jttfC0gjRSW6-tOXKZ97U7ZLWHpH0NYme6VWxjVPO9uOXyTpDw0t9HEYLiGFOONwdUpzpmQtLs1KEJpOV9ipkNRl6ekVe7PHFVWd2x2y7rKjiTLu2zh59Q-Wuf7RAczlXv-d8SyaewKmSREEXxVvlbcgr7Pz398pGmx0m4fEaYGhOd-FAHO33cmiwmurp8FWkiGkgzvSaggv9gUw90d-C36SVFBiQKd8VkekC2M8Z9y5TJLkobvrIOgk96fPMs5o-tiroGmsHOyRuxYu3hf2kXYk5bH_JGcWZNee71AxF6-jSpN7eoAt3nr49MLSqYOjTLd0N1_EiRYmRDoFH_gZuWgjKcElvlQtgedEwzW6PId5mxLDClHcrK88SnXvMuUxQvjntZaCBIH41eZClk04=w319-h213-no?authuser=0" style="weight: 250px; height: 250px; border-width: thin; border-color: red; border-style: solid; border-radius: 70px;">
-        <p>上川　晴河(26)</p>
-    </div>
-    <div class="me-thought">
-        <h1>このサイトを立ち上げた目的・想い</h1>
-        <p>;;;</p>
+    <div class="me">
+        <div class="me-name">
+            <h3>サイト立ち上げ人</h3>
+            <img src="https://lh3.googleusercontent.com/pw/ACtC-3dBBrpKnR9dM95FDOs98RIdT6Xz5dpeZIudDl6NLab8pJua874Ga3K87WwB8fo5Z4JIMdyitR4l0w8v8JpwB0tH5q4Nb7POdT66masyer4kdM08chWYDHBWnQY4VB53VIbmP14SgRSYguFGdxK_pvJAtIjCHfd0XS11pwj5X6VJJr-mo044JL2DecFs6dLNFG9K9hbrbNrYXQ0mOmq90Jc5NWbzJrXY5CibFylPL5zM4Ii7DO2dtpEGEYIE_BD9vShP5E-0d7xYaU5HuI_Z_3hEZyHg242GWbCfGR71IMsAfP50knP6WilHbnE9_Bu_jttfC0gjRSW6-tOXKZ97U7ZLWHpH0NYme6VWxjVPO9uOXyTpDw0t9HEYLiGFOONwdUpzpmQtLs1KEJpOV9ipkNRl6ekVe7PHFVWd2x2y7rKjiTLu2zh59Q-Wuf7RAczlXv-d8SyaewKmSREEXxVvlbcgr7Pz398pGmx0m4fEaYGhOd-FAHO33cmiwmurp8FWkiGkgzvSaggv9gUw90d-C36SVFBiQKd8VkekC2M8Z9y5TJLkobvrIOgk96fPMs5o-tiroGmsHOyRuxYu3hf2kXYk5bH_JGcWZNee71AxF6-jSpN7eoAt3nr49MLSqYOjTLd0N1_EiRYmRDoFH_gZuWgjKcElvlQtgedEwzW6PId5mxLDClHcrK88SnXvMuUxQvjntZaCBIH41eZClk04=w319-h213-no?authuser=0" style="weight: 100px; height: 100px; border-width: thin; border-color: red; border-style: solid; border-radius: 70px;">
+            <p>上川　晴河(26)</p>
+        </div>
+        <div class="me-thought">
+            <h2>このサイトを立ち上げた目的・想い</h2>
+            <p>;;;</p>
+        </div>
     </div>
 </div>
 </main>

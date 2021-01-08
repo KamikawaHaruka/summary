@@ -1,0 +1,54 @@
+.inner-left {
+    float: left;
+    padding: 0 10px 10px 15px;
+    margin-right: 40px;
+    background-color: red;
+}
+
+.inner-left p {
+    font-size: 24px;
+}
+
+.inner-right {
+    float: right;
+    padding: 0 45px 10px 15px;
+    background-color: green;
+}
+
+.inner-right p {
+    font-size: 24px;
+}
+
+.wrapper {
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 200px;
+}
+
+.title {
+    letter-spacing: normal;
+    margin: 0 0 100px 50px;
+}
+
+.title h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 48px;
+}
+
+.me {
+    margin-left: 50px;
+}
+
+.me-thought {
+    float:right;
+    margin-right: 370px;
+}
+
+.me-name {
+    float: left;
+}
+
+.me-name p {
+    margin-left: 25px;
+}
