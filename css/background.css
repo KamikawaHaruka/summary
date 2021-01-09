@@ -1,7 +1,8 @@
 body {
-    background-image: url(https://illustrain.com/img/work/2016/illustrain04-book04.png);
-    background-size: 300px;
+    background-image: url(https://sozai-good.com/uploads/84549/84549_thumbnail.png);
+    background-size: 800px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 80% 50%;
+    background-position: 50% 50%;
+    z-index: -1;
 }

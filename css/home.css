@@ -3,6 +3,8 @@
     padding: 0 10px 10px 15px;
     margin-right: 40px;
     background-color: red;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.7) 3px 3px 10px;
 }
 
 .inner-left p {
@@ -13,6 +15,8 @@
     float: right;
     padding: 0 45px 10px 15px;
     background-color: green;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.7) 3px 3px 10px;
 }
 
 .inner-right p {

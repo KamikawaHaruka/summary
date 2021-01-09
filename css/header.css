@@ -1,7 +1,7 @@
 .header-list {
     background-color: yellow;
     width: 100%;
-    height: 30px;
+    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,5 +9,9 @@
 
 .header-list a {
     color: black;
+    padding-top: 10px;
     padding-left: 20px;
+    display: inline-block;
 }
+
+a:hover { color: red; }
