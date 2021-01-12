@@ -1,0 +1,18 @@
+.wrapper {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.inner {
+    display: inline-block;
+    background-image: url(https://www.illust-box.jp/db_img/sozai/00011/119533/watermark.jpg);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-position: 50% 70%;
+    padding-left: 30px;
+}
+
+.inner p {
+    font-size: 32px;
+    padding-bottom:130px;
+}

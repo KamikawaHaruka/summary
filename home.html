@@ -7,45 +7,6 @@
 <html lang="ja">
 <head>
     <title>本要約まとめサイト</title>
-<script type="text/javascript">
-
-
-var target = "top";
-
-// 設定終了
-
-
-function jump(){
-
-	var url = document.form1.select.options[document.form1.select.selectedIndex].value;
-
-	if(url != "" ){
-
-		if(target == 'top'){
-
-			top.location.href = url;
-
-		}
-		else if(target == 'blank'){
-
-			window.open(url, 'window_name');
-
-		}
-		else if(target != ""){
-
-			eval('parent.' + target + '.location.href = url');
-
-		}
-		else{
-
-			location.href = url;
-
-		}
-
-	}
-
-}
-</script>
 </head>
     
 <body>
@@ -54,6 +15,7 @@ function jump(){
     <a href="home.html">home</a>
     <a href="search/summarizer_search.html">要約者から探す</a>
     <a href="search/book_search.html">本から探す</a>
+    <a href="contact.html">お問い合わせ</a>
 </div>
 <div class="title">
     <h1>本要約まとめサイト</h1>
@@ -67,18 +29,15 @@ function jump(){
 <main>
 <div class="contents">
     <div class="wrapper">
+        <h1>メニュー</h1>
         <div class="inner-left">
-            <p>検索する</p>
-            <form action="#" name="form1">
-                <select name="select" onChange="jump()">
-                    <option value="">選択してください</option>
-                    <option value="search/summarizer_search.html">要約者から探す</option>
-                    <option value="search/book_search.html">本から探す</option>
-                </select>
-            </form>
+            <a href="search/summarizer_search.html">要約者から探す</a>
+        </div>
+        <div class="inner-center">
+            <a href="search/book_search.html">本から探す</a>
         </div>
         <div class="inner-right">
-            <p>お問い合わせ</p>
+            <a href="contact.html">お問い合わせ</a>
         </div>
     </div>
     <div class="me">
@@ -86,10 +45,6 @@ function jump(){
             <h3>サイト立ち上げ人</h3>
             <img src="https://lh3.googleusercontent.com/pw/ACtC-3dBBrpKnR9dM95FDOs98RIdT6Xz5dpeZIudDl6NLab8pJua874Ga3K87WwB8fo5Z4JIMdyitR4l0w8v8JpwB0tH5q4Nb7POdT66masyer4kdM08chWYDHBWnQY4VB53VIbmP14SgRSYguFGdxK_pvJAtIjCHfd0XS11pwj5X6VJJr-mo044JL2DecFs6dLNFG9K9hbrbNrYXQ0mOmq90Jc5NWbzJrXY5CibFylPL5zM4Ii7DO2dtpEGEYIE_BD9vShP5E-0d7xYaU5HuI_Z_3hEZyHg242GWbCfGR71IMsAfP50knP6WilHbnE9_Bu_jttfC0gjRSW6-tOXKZ97U7ZLWHpH0NYme6VWxjVPO9uOXyTpDw0t9HEYLiGFOONwdUpzpmQtLs1KEJpOV9ipkNRl6ekVe7PHFVWd2x2y7rKjiTLu2zh59Q-Wuf7RAczlXv-d8SyaewKmSREEXxVvlbcgr7Pz398pGmx0m4fEaYGhOd-FAHO33cmiwmurp8FWkiGkgzvSaggv9gUw90d-C36SVFBiQKd8VkekC2M8Z9y5TJLkobvrIOgk96fPMs5o-tiroGmsHOyRuxYu3hf2kXYk5bH_JGcWZNee71AxF6-jSpN7eoAt3nr49MLSqYOjTLd0N1_EiRYmRDoFH_gZuWgjKcElvlQtgedEwzW6PId5mxLDClHcrK88SnXvMuUxQvjntZaCBIH41eZClk04=w319-h213-no?authuser=0" style="weight: 100px; height: 100px; border-width: thin; border-color: red; border-style: solid; border-radius: 70px;">
             <p>上川　晴河(26)</p>
-        </div>
-        <div class="me-thought">
-            <h2>このサイトを立ち上げた目的・想い</h2>
-            <p>;;;</p>
         </div>
     </div>
 </div>
