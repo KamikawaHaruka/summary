@@ -1,0 +1,18 @@
+.wrapper {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.inner {
+    display: inline-block;
+    background-image: url(https://4.bp.blogspot.com/-GAVYMoV3F4M/UZYk0hIarTI/AAAAAAAATGc/A05ffniZ3i8/s800/job_senesi.png);
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: 50% 70%;
+    padding-left: 30px;
+}
+
+.inner p {
+    font-size: 32px;
+    padding-bottom:130px;
+}
